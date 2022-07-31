@@ -44,20 +44,20 @@ export const login=()=>{
     
 }
 
-export const getUsers = () => async dispatch => {
+// export const getUsers = () => async dispatch => {
 
-    try{
-        const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=cd50b668108ab0e7d74f4585d5c05b53`)
-        dispatch( {
-            type: GET_USERS,
-            payload: res.data.results
-        })
-    }
-    catch(e){
-        dispatch( {
-            type: USERS_ERROR,
-            payload: console.log(e),
-        })
-    }
+//     try{
+//         const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=cd50b668108ab0e7d74f4585d5c05b53`)
+//         dispatch( {
+//             type: GET_USERS,
+//             payload: res.data.results
+//         })
+//     }
+//     catch(e){
+//         dispatch( {
+//             type: USERS_ERROR,
+//             payload: console.log(e),
+//         })
+//     }
 
-}
+// }
